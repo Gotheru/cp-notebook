@@ -5,7 +5,10 @@
  * Source: https://ideone.com/0cMjZJ
 	* https://codeforces.com/contest/710/problem/F
 	* https://codeforces.com/contest/1207/problem/G
+ * Verification: @todo
  */
+#pragma once
+#include "../../contest/template.hpp"
 
 template<size_t ASZ> struct ACfixed {
 	struct Node { AR<int, ASZ> to; int link; };

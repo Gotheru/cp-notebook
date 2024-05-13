@@ -1,9 +1,12 @@
 /**
  * Description: for each prefix, stores link to max length suffix which is also a prefix
+ * Time: O(N \log \Sigma)
  * Source: https://ideone.com/0cMjZJ
  * Verification: 
 	* Kattis stringmultimatching
  */
+#pragma once
+#include "../../contest/template.hpp"
 
 struct ACunfixed { 
 	struct node {
@@ -11,6 +14,7 @@ struct ACunfixed {
 		int link;
 	};
 	V<node> d;
+	vi bfs; 
 	ACunfixed() { d.eb(); }
 	int add(str s) { // add word
 		int v = 0;
@@ -31,7 +35,7 @@ struct ACunfixed {
 		d[0].link = -1;
 		queue<int> q; q.push(0);
 		while (sz(q)) {
-			int v = q.ft; q.pop();
+			int v = q.ft; q.pop(); bfs.pb(v);
 			each(it,d[v].to) {
 				int u = it.s; d[u].link = nex(d[v].link,it.f); 
 				q.push(u); 

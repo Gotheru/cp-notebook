@@ -1,8 +1,10 @@
 /**
  * Description: sorts vertices such that if there exists an edge x->y, then x goes before y
  * Source: KACTL
- * Verification: https://open.kattis.com/problems/quantumsuperposition
+ * Verification: @todo
  */
+#pragma once
+#include "../../contest/template.hpp"
 
 struct TopoSort {
 	int N; vi in, res;
