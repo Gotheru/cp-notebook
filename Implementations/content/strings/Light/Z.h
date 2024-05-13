@@ -6,7 +6,6 @@
  * Verification: https://judge.yosupo.jp/problem/zalgorithm
  */
 #pragma once
-
 #include "../../contest/template.hpp"
 
 vi z(str s) {
