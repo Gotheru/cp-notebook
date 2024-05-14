@@ -1,14 +1,16 @@
+#pragma once
+
 /**
  * Description: 1D range minimum query. If TL is an issue, use 
 	* arrays instead of vectors and store values instead of indices.
  * Source: KACTL
  * Verification: 
-	* https://cses.fi/problemset/stats/1647/
-	* http://wcipeg.com/problem/ioi1223
-	* https://pastebin.com/ChpniVZL
+	* https://judge.yosupo.jp/problem/staticrmq
  * Memory: O(N\log N)
  * Time: O(1)
  */
+
+#include "../../contest/template.hpp"
 
 tcT> struct RMQ { // floor(log_2(x))
 	int level(int x) { return 31-__builtin_clz(x); }

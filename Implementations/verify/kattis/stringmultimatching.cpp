@@ -1,8 +1,8 @@
-#define PROBLEM "https://open.kattis.com/problems/stringmultimatching"
+#define PROBLEM "https://vjudge.net/problem/Kattis-stringmultimatching"
 //
-#include "../../../content/contest/template.hpp"
+#include "../../content/contest/template.hpp"
 // 
-#include "../../../content/strings/Light/AhoCorasickUnfixed.h"
+#include "../../content/strings/Light/AhoCorasickUnfixed.h"
 //
 
 void Gotheru::solve() {

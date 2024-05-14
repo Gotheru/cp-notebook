@@ -1,11 +1,12 @@
+#pragma once
 /**
  * Description: for each prefix, stores link to max length suffix which is also a prefix
  * Time: O(N \log \Sigma)
  * Source: https://ideone.com/0cMjZJ
  * Verification: 
 	* Kattis stringmultimatching
+	* UVA 10679 - I Love Strings!!
  */
-#pragma once
 #include "../../contest/template.hpp"
 
 struct ACunfixed { 

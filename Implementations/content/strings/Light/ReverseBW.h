@@ -1,3 +1,4 @@
+#pragma once
 /**
  * Description: Used only once. Burrows-Wheeler Transform appends 
  	* \# to a string, sorts the rotations of the string in increasing order, 
@@ -5,8 +6,9 @@
 	* of each rotation. This function reverses the transform.
  * Time: O(N\log N)
  * Source: GeeksForGeeks
- * Verification: https://cses.fi/problemset/task/1113/
+ * Verification: https://vjudge.net/problem/CSES-1113
  */
+#include "../../contest/template.hpp"
 
 str reverseBW(str t) {
 	vi nex(sz(t)); iota(all(nex),0);

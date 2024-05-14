@@ -1,8 +1,8 @@
-#define PROBLEM "https://open.kattis.com/problems/stringmatching"
+#define PROBLEM "https://vjudge.net/problem/Kattis-stringmatching"
 //
-#include "../../../content/contest/template.hpp"
+#include "../../content/contest/template.hpp"
 //
-#include "../../../content/strings/Light/KMP.h"
+#include "../../content/strings/Light/KMP.h"
 //
 void Gotheru::solve() {
     str A, B;

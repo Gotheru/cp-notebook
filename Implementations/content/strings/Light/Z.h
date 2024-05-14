@@ -1,3 +1,4 @@
+#pragma once
 /**
  * Description: \texttt{f[i]} is the max \texttt{len} such that 
  	* \texttt{s.substr(0,len) == s.substr(i,len)}
@@ -5,7 +6,6 @@
  * Source: http://codeforces.com/blog/entry/3107
  * Verification: https://judge.yosupo.jp/problem/zalgorithm
  */
-#pragma once
 #include "../../contest/template.hpp"
 
 vi z(str s) {

@@ -1,3 +1,4 @@
+#pragma once
 /**
  * Source: KACTL
  * Time: O(N)
@@ -5,8 +6,6 @@
  	* of the $i$-th prefix of $s$ that is a prefix of $s$
  * Verification: https://open.kattis.com/problems/stringmatching
  */
-#pragma once
-
 #include "../../contest/template.hpp"
 
 vi kmp(str s) {
