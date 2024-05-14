@@ -21,9 +21,11 @@ Here is a list of verified codes as of now:
     - Light
         - [x] AhoCorasickUnfixed.h
         - [x] KMP.h
+        - [x] LyndonFactor.h
         - [x] Manacher.h
         - [x] ReverseBW.h
         - [x] SuffixArray.h
         - [x] SuffixArrayLinear.h
+        - [x] TandemRepeats.h
         - [x] Trie.h
         - [x] Z.h

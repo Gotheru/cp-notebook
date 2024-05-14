@@ -1,17 +1,18 @@
+#pragma once
+
 /**
  * Description: Find all $(i,p)$ such that 
  	* \texttt{s.substr(i,p) == s.substr(i+p,p)}. No two intervals
  	* with the same period intersect or touch.
  * Time: O(N\log N)
  * Source: https://codeforces.com/gym/102012/submission/54638473
- * Verification: GP of Nanjing 2020 D - String Theory
- 	* https://judge.yosupo.jp/problem/runenumerate
- * Usage: solve("aaabababa") // {{0, 1, 1}, {2, 5, 2}}
+ * Verification: https://vjudge.net/problem/Yosupo-runenumerate
+ * Usage: tandem_repeats("aaabababa") // {{0, 1, 1}, {2, 5, 2}}
  */
 
 #include "SuffixArray.h"
 
-V<AR<int,3>> solve(str s) {
+V<AR<int,3>> tandem_repeats(str s) {
 	int N = sz(s); SuffixArray A,B; 
 	A.init(s); reverse(all(s)); B.init(s);
 	V<AR<int,3>> runs;

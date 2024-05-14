@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: 
 	* A string is "simple" if it is strictly smaller than any of its own nontrivial suffixes.
@@ -6,8 +8,10 @@
 	* gets min index i such that cyclic shift of s starting at i is minimum.
  * Source: https://cp-algorithms.com/string/lyndon_factorization.html
  * Time: O(N)
- * Verification: https://uva.onlinejudge.org/index.php?option=onlinejudge&page=show_problem&problem=660
+ * Verification: https://vjudge.net/problem/UVA-719
  */
+
+#include "../../contest/template.hpp"
 
 vs duval(str s) {
 	int N = sz(s); vs factors;

@@ -23,16 +23,16 @@ template<size_t ASZ> struct ACfixed {
 		return v;
 	}
 	void init() { // generate links
-		d[0].link = -1; 
+		d[0].link = -1;
 		queue<int> q; q.push(0);
 		while (sz(q)) {
 			int v = q.ft; q.pop();
 			F0R(c,ASZ) {
 				int u = d[v].to[c]; if (!u) continue;
 				d[u].link = d[v].link == -1 ? 0 : d[d[v].link].to[c];
-				q.push(u); 
+				q.push(u);
 			}
-			if (v) F0R(c,ASZ) if (!d[v].to[c]) 
+			if (v) F0R(c,ASZ) if (!d[v].to[c])
 				d[v].to[c] = d[d[v].link].to[c];
 		}
 	}
