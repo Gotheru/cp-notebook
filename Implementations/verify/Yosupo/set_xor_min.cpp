@@ -1,8 +1,8 @@
 #define PROBLEM "https://vjudge.net/problem/Yosupo-set_xor_min"
 //
-#include "../../content/contest/template.hpp"
+#include "content/contest/template.hpp"
 //
-#include "../../content/strings/Light/Trie.h"
+#include "content/strings/Light/Trie.h"
 //
 void Gotheru::solve() {
     Trie<20000000, 30> T;

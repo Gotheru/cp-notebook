@@ -1,10 +1,14 @@
+#pragma once
+
 /**
  * Source: http://codeforces.com/blog/entry/12143
  * Time: O(N)
  * Description: length of largest palindrome centered at each character of string
  	* and between every consecutive pair
- * Verification: http://www.spoj.com/problems/MSUBSTR/
+ * Verification: https://vjudge.net/problem/SPOJ-MSUBSTR
  */
+
+#include "../../contest/template.hpp"
 
 vi manacher(str _S) {
 	str S = "@"; each(c,_S) S += c, S += "#";
@@ -16,7 +20,6 @@ vi manacher(str _S) {
 		if (i+ans[i] > hi) lo = i-ans[i], hi = i+ans[i];
 	}
 	ans.erase(begin(ans));
-	F0R(i,sz(ans)) if (i%2 == ans[i]%2) ++ans[i]; 
+	F0R(i,sz(ans)) if (i%2 == ans[i]%2) ++ans[i];
 	return ans;
-} 
-/// Usage: ps(manacher("abacaba"))
+}

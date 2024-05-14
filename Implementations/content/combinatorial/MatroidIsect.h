@@ -12,7 +12,7 @@
  	* chilli (KACTL)
  * Verification: https://vjudge.net/problem/Gym-102156D
  * 				 https://vjudge.net/problem/SPOJ-COIN
- * Usage: MatroidIsect<Gmat,Cmat> M(Gmat(V,ed),Cmat(col),sz(ed)); M.solve()
+ * Usage: MatroidIsect<Gmat,Cmat> M(Gmat(V,ed),Cmat(col),sz(ed)); M.solve();
  */
 
 #include "../contest/template.hpp"
@@ -91,22 +91,3 @@ template<class M1, class M2> struct MatroidIsect {
 		return false;
     }
 };
-
-/**
-int main() {
-	setIO();
-	int r; 
-	while (cin >> r) {
-		if (!r) break;
-		vpi ed; vi col;
-		F0R(i,r) {
-			int a,b,c,d; re(a,b,c,d);
-			ed.pb({a,b}), ed.pb({c,d});
-			col.pb(i); col.pb(i);
-		}
-		MatroidIsect<Gmat,Cmat> M(sz(ed),Gmat(ed),Cmat(col));
-		int cnt = 0; F0R(i,M.n) cnt += M.iset[i];
-		ps(2*cnt);
-	}
-}
-*/

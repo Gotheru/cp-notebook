@@ -9,7 +9,7 @@
  * Verification: https://www.spoj.com/problems/COIN/
  */
 
-#include "../graphs (12)/DSU/DSU (7.6).h"
+#include "../graphs/DSU/DSU.h"
 
 struct Element {
 	pi ed; int col;
