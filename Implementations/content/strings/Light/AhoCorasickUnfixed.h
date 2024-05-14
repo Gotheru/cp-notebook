@@ -4,8 +4,8 @@
  * Time: O(N \log \Sigma)
  * Source: https://ideone.com/0cMjZJ
  * Verification: 
-	* Kattis stringmultimatching
-	* UVA 10679 - I Love Strings!!
+	* https://vjudge.net/problem/Kattis-stringmultimatching
+	* https://vjudge.net/problem/UVA-10679
  */
 #include "../../contest/template.hpp"
 

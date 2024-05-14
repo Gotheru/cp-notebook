@@ -8,7 +8,7 @@
 	* https://github.com/atcoder/ac-library/blob/master/atcoder/string.hpp
  	* https://www.researchgate.net/publication/224176324_Two_Efficient_Algorithms_for_Linear_Time_Suffix_Array_Construction
  * Verification:
- 	* https://judge.yosupo.jp/problem/suffixarray
+ 	* https://vjudge.net/problem/Yosupo-suffixarray
  */
 
 #include "../../contest/template.hpp"
