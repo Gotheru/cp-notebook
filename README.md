@@ -24,4 +24,5 @@ Here is a list of verified codes as of now:
         - [x] ReverseBW.h
         - [x] SuffixArray.h
         - [x] SuffixArrayLinear.h
+        - [x] Trie.h
         - [x] Z.h
