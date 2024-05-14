@@ -1,24 +1,29 @@
+#pragma once
+
 /**
  * Description: Find three edge-disjoint spanning trees 
  	* (matroid partition)
  * Time: ?
  * Source: https://codeforces.com/blog/entry/69287
  	* chilli (KACTL)
- * Verification: https://dmoj.ca/problem/dmopc19c3p6
- * Usage: MatroidPart<Gmat>(n,3,3*(N-1),Gmat(ed))
+ * Verification: https://vjudge.net/problem/DMOJ-dmopc19c3p6
+ * Usage: MatroidPart<Gmat>(M,3,3*(N-1),Gmat(ed))
  */
 
- struct Gmat { // graphic matroid
-	int V = 0; vpi ed; DSU D;
+#include "../contest/template.hpp"
+#include "../graphs/DSU/DSU.h"
+
+struct Gmat { // graphic matroid
+	int N = 0; vpi ed; DSU D;
 	vi depth;
 	V<vpi> adj;
 	vpi pre;
 	Gmat(vpi ed):ed(ed) {
 		map<int,int> m; each(t,ed) m[t.f] = m[t.s] = 0;
-		each(t,m) t.s = V++; 
+		each(t,m) t.s = N++; 
 		each(t,this->ed) t.f = m[t.f], t.s = m[t.s];
 	}
-	void clear() { D.init(V); adj = V<vpi>(V); }
+	void clear() { D.init(N); adj = V<vpi>(N); }
 	void ins(int i) { assert(D.unite(ed[i].f,ed[i].s)); 
 		adj[ed[i].f].pb({ed[i].s,i});
 		adj[ed[i].s].pb({ed[i].f,i});
@@ -41,8 +46,8 @@
 		}
 	}
 	void genBack() {
-		depth = vi(V,-1); pre = vpi(V,{-1,-1});
-		F0R(i,V) if (depth[i] == -1) {
+		depth = vi(N,-1); pre = vpi(N,{-1,-1});
+		F0R(i,N) if (depth[i] == -1) {
 			depth[i] = 0;
 			dfs(i);
 		}

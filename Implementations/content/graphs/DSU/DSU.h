@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Disjoint Set Union with path compression
  	* and union by size. Add edges and test connectivity. 
@@ -6,6 +8,8 @@
  * Source: CSAcademy, KACTL
  * Verification: *
  */
+
+#include "../../contest/template.hpp"
 
 struct DSU {
 	vi e; void init(int N) { e = vi(N,-1); }
