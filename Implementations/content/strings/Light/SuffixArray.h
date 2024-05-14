@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Sort suffixes. First element of \texttt{sa} is \texttt{sz(S)},
  	* \texttt{isa} is the inverse of \texttt{sa}, and \texttt{lcp} stores
@@ -5,11 +7,10 @@
  * Time: O(N\log N)
  * Source: SuprDewd, KACTL, majk, ekzhang (http://ekzlib.herokuapp.com)
  * Verification: 
-	* https://open.kattis.com/problems/suffixsorting
-	* https://judge.yosupo.jp/problem/suffixarray
+	* https://vjudge.net/problem/Yosupo-suffixarray
  */
 
-#include "RMQ.h"
+#include "../../data-structures/static-range-queries/RMQ.h"
 
 struct SuffixArray {
 	str S; int N; vi sa, isa, lcp;

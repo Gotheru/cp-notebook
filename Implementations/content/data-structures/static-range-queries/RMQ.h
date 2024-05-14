@@ -5,7 +5,7 @@
 	* arrays instead of vectors and store values instead of indices.
  * Source: KACTL
  * Verification: 
-	* https://judge.yosupo.jp/problem/staticrmq
+	* https://vjudge.net/problem/Yosupo-staticrmq
  * Memory: O(N\log N)
  * Time: O(1)
  */

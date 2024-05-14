@@ -120,4 +120,4 @@ namespace Gotheru {
 	void solve();
 };
 
-int main() { Gotheru::solve(); return 0; }
+int main() { cin.tie(0)->sync_with_stdio(0); Gotheru::solve(); return 0; }

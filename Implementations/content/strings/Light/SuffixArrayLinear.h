@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Linear-time suffix array.
  * Time: $O(N)$, \tilde 100ms for $N=5\cdot 10^5$
@@ -8,6 +10,8 @@
  * Verification:
  	* https://judge.yosupo.jp/problem/suffixarray
  */
+
+#include "../../contest/template.hpp"
 
 vi sa_is(const vi& s, int upper) {
 	int n = sz(s); if (!n) return {};
