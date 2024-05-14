@@ -11,7 +11,7 @@
 import java.awt.geom.*;
 import java.io.*;
 import java.util.*;
-public class AreaIntersect {
+public class PolygonUnion {
 	static int nextI(StringTokenizer st) { 
 		return Integer.parseInt(st.nextToken()); }
 	static double nextD(StringTokenizer st) { 

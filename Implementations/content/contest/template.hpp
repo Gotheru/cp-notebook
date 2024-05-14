@@ -57,6 +57,7 @@ tcT> int upb(V<T>& a, const T& b) { return int(ub(all(a),b)-bg(a)); }
 #define each(a,x) for (auto& a: x)
 
 const int MOD = (int)1e9+7; // 998244353;
+const int INF = (int)1e9;
 const int MX = (int)2e5+5;
 const ll BIG = 1e18; // not too close to LLONG_MAX
 const db PI = acos((db)-1);
