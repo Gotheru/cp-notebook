@@ -238,8 +238,8 @@ Here is a list of verified codes as of now:
         - [ ] PalTree.h
         - [ ] SuffixAutomaton.h
         - [ ] SuffixTree.h
-    - [ ] _Light_
-        - [ ] AhoCorasickFixed.h
+    - [x] _Light_
+        - [x] AhoCorasickFixed.h
         - [x] AhoCorasickUnfixed.h
         - [x] HashRange.h
         - [x] KMP.h
