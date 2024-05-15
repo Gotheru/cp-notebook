@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Polynomial hash for substrings with two bases.
  * Source:
@@ -7,6 +9,8 @@
 	* USACO Dec 17 Plat 1 (LCP :o)
 	* CF Check Transcription
  */
+
+#include "../../contest/template.hpp"
 
 using H = AR<int,2>; // bases not too close to ends 
 H makeH(char c) { return {c,c}; }

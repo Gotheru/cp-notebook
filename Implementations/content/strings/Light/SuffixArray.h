@@ -8,6 +8,7 @@
  * Source: SuprDewd, KACTL, majk, ekzhang (http://ekzlib.herokuapp.com)
  * Verification: 
 	* https://vjudge.net/problem/Yosupo-suffixarray
+	* https://vjudge.net/problem/UVA-10829
  */
 
 #include "../../data-structures/static-range-queries/RMQ.h"

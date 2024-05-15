@@ -1,3 +1,7 @@
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.InputMismatchException;
+
 /**
  * Description: Faster input / output for java
  * Source: Matt Fontaine

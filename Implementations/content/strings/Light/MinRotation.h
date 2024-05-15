@@ -2,7 +2,7 @@
  * Description: minimum cyclic shift
  * Time: O(N)
  * Source: KACTL
- * Verification: https://cses.fi/problemset/task/1110/
+ * Verification: https://vjudge.net/problem/CSES-1110
  */
  
 int minRotation(str s) {

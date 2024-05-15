@@ -8,24 +8,28 @@ To easily compile these codes and submit them to vjudge, ```oj-bundle``` from [o
 
 Here is a list of verified codes as of now:
 
-- combinatorial
+- [ ] combinatorial
     - [x] MatroidIsect.h
     - [x] MatroidPart.h
-- data-structures
-    - static-range-queries
+- [ ] data-structures
+    - [ ] static-range-queries
         - [x] RMQ.h
-- graphs
-    - DSU
+- [ ]graphs
+    - [ ]DSU
         - [x] DSU.h
-- strings
-    - Light
+- [ ] strings
+    - [ ] Light
+        - [ ] AhoCorasickFixed.h
         - [x] AhoCorasickUnfixed.h
+        - [ ] HashRange.h
         - [x] KMP.h
         - [x] LyndonFactor.h
         - [x] Manacher.h
+        - [x] MinRotation.h
         - [x] ReverseBW.h
         - [x] SuffixArray.h
         - [x] SuffixArrayLinear.h
         - [x] TandemRepeats.h
         - [x] Trie.h
+        - [ ] TrieAlpha.h
         - [x] Z.h
