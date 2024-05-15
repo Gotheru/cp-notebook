@@ -38,12 +38,12 @@ Here is a list of verified codes as of now:
         - [ ] Wavelet.h
         - [ ] pseg1.h
         - [ ] pseg2.h
-    - [ ] 2D-range-queries
+    - [ ] _2D-range-queries_
         - [ ] BIT2DOff.h
         - [ ] BITseg.h
         - [ ] BITtree.h
         - [ ] SegSeg.h
-    - [ ] STL
+    - [ ] _STL_
         - [ ] Bset.h
         - [ ] CoordCompress.h
         - [ ] HashMap.h
@@ -55,7 +55,7 @@ Here is a list of verified codes as of now:
         - [ ] OrderStatisticsTree.h
         - [ ] PQ.h
         - [ ] Rope.h
-    - [ ] static-range-queries
+    - [ ] _static-range-queries_
         - [ ] FasterRMQ.h
         - [ ] PrefixSums.h
         - [x] RMQ.h
@@ -64,20 +64,20 @@ Here is a list of verified codes as of now:
     - [ ] EulerTourTree.h
     - [ ] LeftistHeap.h
     - [ ] Treap.h
-- [ ] geometry
-    - [ ] 3D
+- [ ] **geometry**
+    - [ ] _3D_
         - [ ] Hull3D.h
         - [ ] Hull3D_kactl.h
         - [ ] Point3D.h
         - [ ] PolySaVol.h
         - [ ] Quater.h
-    - [ ] Circles
+    - [ ] _Circles_
         - [ ] Circle.h
         - [ ] CircleIsect.h
         - [ ] CircleTangents.h
         - [ ] Circumcenter.h
         - [ ] MinEnclosingCirc.h
-    - [ ] Misc
+    - [ ] _Misc_
         - [ ] ClosestPair.h
         - [ ] Delaunay3.h
         - [ ] DelaunayFast.h
@@ -86,7 +86,7 @@ Here is a list of verified codes as of now:
         - [ ] ManhattanMST.h
         - [ ] MaxCollinear.h
         - [ ] kdtree_KACTL.h
-    - [ ] Polygons
+    - [ ] _Polygons_
         - [ ] ConvexHull.h
         - [ ] ConvexHullGraham.h
         - [ ] HalfPlaneIsect.h
@@ -100,7 +100,7 @@ Here is a list of verified codes as of now:
         - [ ] PolygonUnion.java
         - [ ] PolygonUnion.kt
         - [ ] _old_HalPlaneIsect.h
-    - [ ] Primitives
+    - [ ] _Primitives_
         - [ ] AngleCmp.h
         - [ ] Complex.h
         - [ ] ComplexComp.h
@@ -108,11 +108,11 @@ Here is a list of verified codes as of now:
         - [ ] PointShort.h
         - [ ] SegDist.h
         - [ ] SegIsect.h
-- [ ] graphs
+- [ ] **graphs**
     - [ ] DSU
         - [x] DSU.h
-- [ ] strings
-    - [ ] Light
+- [ ] **strings**
+    - [ ] _Light_
         - [ ] AhoCorasickFixed.h
         - [x] AhoCorasickUnfixed.h
         - [ ] HashRange.h
