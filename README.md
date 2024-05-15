@@ -14,8 +14,8 @@ Here is a list of verified codes as of now:
 - [ ] data-structures
     - [ ] static-range-queries
         - [x] RMQ.h
-- [ ]graphs
-    - [ ]DSU
+- [ ] graphs
+    - [ ] DSU
         - [x] DSU.h
 - [ ] strings
     - [ ] Light
