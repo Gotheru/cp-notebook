@@ -13,6 +13,7 @@
 template<size_t ASZ> struct ACfixed {
 	struct Node { AR<int, ASZ> to; int link; };
 	V<Node> d{{}};
+	vi bfs;
 	int add(str s) { // add word
 		int v = 0;
 		each(C,s) {
@@ -26,7 +27,7 @@ template<size_t ASZ> struct ACfixed {
 		d[0].link = -1;
 		queue<int> q; q.push(0);
 		while (sz(q)) {
-			int v = q.ft; q.pop();
+			int v = q.ft; q.pop(); bfs.pb(v);
 			F0R(c,ASZ) {
 				int u = d[v].to[c]; if (!u) continue;
 				d[u].link = d[v].link == -1 ? 0 : d[d[v].link].to[c];

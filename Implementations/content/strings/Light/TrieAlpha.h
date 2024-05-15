@@ -1,5 +1,7 @@
 /**
  * Description: insert string of lowercase letters
+ * Verification:
+ 	* https://vjudge.net/problem/Kattis-bing
  */
 
 template<int SZ> struct TrieAlpha {

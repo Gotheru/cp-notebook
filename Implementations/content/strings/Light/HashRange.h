@@ -5,9 +5,8 @@
  * Source:
 	* KACTL
 	* https://codeforces.com/contest/1207/submission/59309672
- * Verification: 
-	* USACO Dec 17 Plat 1 (LCP :o)
-	* CF Check Transcription
+ * Verification:
+	* https://vjudge.net/problem/CodeForces-1056E
  */
 
 #include "../../contest/template.hpp"
@@ -26,9 +25,9 @@ H operator-(H l, H r) {
 H operator*(H l, H r) { 
 	F0R(i,2) l[i] = (ll)l[i]*r[i]%MOD;
 	return l; }
-/// H& operator+=(H& l, H r) { return l = l+r; }
-/// H& operator-=(H& l, H r) { return l = l-r; }
-/// H& operator*=(H& l, H r) { return l = l*r; }
+// H& operator+=(H& l, H r) { return l = l+r; }
+// H& operator-=(H& l, H r) { return l = l-r; }
+// H& operator*=(H& l, H r) { return l = l*r; }
 
 V<H> pows{{1,1}};
 struct HashRange {
@@ -42,4 +41,3 @@ struct HashRange {
 	/**int lcp(HashRange& b) { return first_true([&](int x) { 
 		return cum[x] != b.cum[x]; },0,min(sz(S),sz(b.S)))-1; }*/
 };
-/// HashRange HR; HR.add("ababab"); F0R(i,6) FOR(j,i,6) ps(i,j,HR.hash(i,j));

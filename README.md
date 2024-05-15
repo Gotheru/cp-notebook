@@ -241,7 +241,7 @@ Here is a list of verified codes as of now:
     - [ ] _Light_
         - [ ] AhoCorasickFixed.h
         - [x] AhoCorasickUnfixed.h
-        - [ ] HashRange.h
+        - [x] HashRange.h
         - [x] KMP.h
         - [x] LyndonFactor.h
         - [x] Manacher.h
@@ -251,7 +251,7 @@ Here is a list of verified codes as of now:
         - [x] SuffixArrayLinear.h
         - [x] TandemRepeats.h
         - [x] Trie.h
-        - [ ] TrieAlpha.h
+        - [x] TrieAlpha.h
         - [x] Z.h
 - [ ] **various**
     - [ ] Bit.kt
