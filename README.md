@@ -109,9 +109,135 @@ Here is a list of verified codes as of now:
         - [ ] SegDist.h
         - [ ] SegIsect.h
 - [ ] **graphs**
-    - [ ] DSU
+    - [ ] _Advanced_
+        - [ ] ChordalGraphRecognition.h
+        - [ ] DirectedMST.h
+        - [ ] DirectedMST_KACTL.h
+        - [ ] DominatorTree.h
+        - [ ] EdgeColor.h
+        - [ ] EdgeColorBip.h
+        - [ ] KthWalk.h
+        - [ ] LCT.h
+        - [ ] LoopyNim.h
+        - [ ] MaxClique.h
+        - [ ] StableRoommates.h
+        - [ ] ThreeEdgeCC.h
+        - [ ] TopTree.h
+        - [ ] TreeDecomp2.h
+    - [ ] _Basics_
+        - [ ] BellmanFord.h
+        - [ ] Dijkstra.h
+        - [ ] DirectedCycle.h
+        - [ ] FloydWarshall.h
+        - [ ] GridBFS.h
+        - [ ] NegativeCycle.h
+        - [ ] TopoSort.h
+        - [ ] TreeTour.h
+    - [ ] _DFS_
+        - [ ] BCC.h
+        - [ ] BipolarOrientation.h
+        - [ ] EulerPath.h
+        - [ ] MaximalCliques.h
+        - [ ] SCCK.h
+        - [ ] SCCT.h
+        - [ ] TwoSAT.h
+    - [ ] _DSU_
         - [x] DSU.h
+        - [ ] DSUrb.h
+        - [ ] DynaCon.h
+        - [ ] TwoEdgeCC.h
+    - [ ] _Flows_
+        - [ ] CapacityScaling.h
+        - [ ] Dinic.h
+        - [ ] GlobalMinCut.h
+        - [ ] GomoryHu.h
+        - [ ] HLPP.h
+        - [ ] MCMF.h
+        - [ ] NetworkSimplex.h
+    - [ ] _Matching_
+        - [ ] DFSmatch.h
+        - [ ] FakeMatch.h
+        - [ ] GeneralMatchBlossom.h
+        - [ ] GeneralMatchBlossom_Alt.h
+        - [ ] GeneralMatchBlossom_Old.h
+        - [ ] Hungarian.h
+        - [ ] MaxMatchFast.h
+        - [ ] MaxMatchHeuristic.h
+        - [ ] MaxMatchLexMin.h
+    - [ ] _Trees_
+        - [ ] Centroid.h
+        - [ ] HLD.h
+        - [ ] LCAjump.h
+        - [ ] LCArmq.h
+        - [ ] SmallToLarge.h
+        - [ ] TreeDiameter.h
+- [x] **math**
+- [ ] **number-theory**
+    - [ ] _Euclid_
+        - [ ] CRT.h
+        - [ ] Euclid.h
+        - [ ] FracInterval.h
+        - [ ] ModArith.h
+    - [ ] _Modular Arithmetic_
+        - [ ] DiscreteLog.h
+        - [ ] FastMod.h
+        - [ ] ModFact.h
+        - [ ] ModFactInt.h
+        - [ ] ModInt.h
+        - [ ] ModInt128.h
+        - [ ] ModIntDynamic.h
+        - [ ] ModIntShort.h
+        - [ ] ModMulLL.h
+        - [ ] ModSqrt.h
+        - [ ] ModSum.h
+        - [ ] Order.h
+    - [ ] _Primality_
+        - [ ] FactorBasic.h
+        - [ ] FactorFast.h
+        - [ ] MillerRabin.h
+        - [ ] MultiplicativePrefixSums.h
+        - [ ] PrimeCnt.h
+        - [ ] PrimeCntMin25.h
+        - [ ] PrimeCntNeal.h
+        - [ ] Sieve.h
+- [ ] **numerical**
+    - [ ] _Arithmetic_
+        - [ ] BigInt.h
+        - [ ] ExprParse.h
+        - [ ] Frac.h
+    - [ ] _Matrix_
+        - [ ] CharPoly.h
+        - [ ] Hafnian.h
+        - [ ] Matrix.h
+        - [ ] MatrixInv.h
+        - [ ] MatrixTree.h
+        - [ ] ShermanMorrison.h
+        - [ ] SparseDet.h
+        - [ ] XorBasis.h
+    - [ ] _Misc_
+        - [ ] GoldenSectionSearch.h
+        - [ ] Integrate.h
+        - [ ] IntegrateAdaptive.h
+        - [ ] LinRec.h
+        - [ ] LinearRecurrence.h
+        - [ ] Simplex.h
+    - [ ] _Polynomials_
+        - [ ] ChirpZ.h
+        - [ ] FFT.h
+        - [ ] Karatsuba.h
+        - [ ] Poly.h
+        - [ ] PolyConv.h
+        - [ ] PolyEuclid.h
+        - [ ] PolyInterpolate.h
+        - [ ] PolyInv.h
+        - [ ] PolyInvSimpler.h
+        - [ ] PolyMultipoint.h
+        - [ ] PolyRoots.h
 - [ ] **strings**
+    - [ ] _Heavy_
+        - [ ] PalTree.h
+        - [ ] SuffixAutomaton.h
+        - [ ] SuffixTree.h
     - [ ] _Light_
         - [ ] AhoCorasickFixed.h
         - [x] AhoCorasickUnfixed.h
@@ -127,3 +253,19 @@ Here is a list of verified codes as of now:
         - [x] Trie.h
         - [ ] TrieAlpha.h
         - [x] Z.h
+- [ ] **various**
+    - [ ] Bit.kt
+    - [ ] BumpAllocator.h
+    - [ ] BumpAllocatorSTL.h
+    - [ ] CircularLCS.h
+    - [ ] Decimal.py
+    - [ ] DynaLIS.h
+    - [ ] FastIO.h
+    - [ ] Knapsack.h
+    - [ ] Kotlin.kt
+    - [ ] Main.java
+    - [ ] Ops.h
+    - [ ] Python3.py
+    - [ ] SMAWK.h
+    - [ ] SmallPtr.h
+    - [ ] Ycombinator.h
