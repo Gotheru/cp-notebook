@@ -8,7 +8,7 @@ To easily compile these codes and submit them to vjudge, ```oj-bundle``` from [o
 
 Here is a list of verified codes as of now:
 
-- [ ] combinatorial
+- [ ] **combinatorial**
     - [ ] DeBrujinSeq.h
     - [ ] IntPerm.h
     - [x] MatroidIsect.h
@@ -17,8 +17,8 @@ Here is a list of verified codes as of now:
     - [ ] PermGroup.h
     - [ ] RSK.h
     - [ ] RSKrecover.h
-- [ ] data-structures
-    - [ ] 1D-range-queries
+- [ ] **data-structures**
+    - [ ] _1D-range-queries_
         - [ ] BIT.h
         - [ ] BIToff.h
         - [ ] BITrange.h
