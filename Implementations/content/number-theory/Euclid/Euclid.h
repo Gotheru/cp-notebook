@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Generalized Euclidean algorithm. \texttt{euclid} and 
  	* \texttt{invGeneral} work for $A,B<2^{62}$. 
@@ -5,6 +7,8 @@
  * Time: O(\log AB)
  * Verification: https://codeforces.com/gym/102411/problem/G
  */
+
+#include "../../contest/template.hpp"
 
 // ceil(a/b)
 // ll cdiv(ll a, ll b) { return a/b+((a^b)>0&&a%b); }

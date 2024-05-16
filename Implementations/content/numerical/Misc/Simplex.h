@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Solves a general linear maximization problem: 
  	* maximize $c^T x$ subject to $Ax \le b$, $x \ge 0$.
@@ -19,9 +21,10 @@
 	* http://www.columbia.edu/~cs2035/courses/ieor3608.F05/bigm1.pdf
 	* https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-046j-design-and-analysis-of-algorithms-spring-2015/lecture-notes/MIT6_046JS15_lec15.pdf
  * Verification: 
-    * https://open.kattis.com/contests/ecna19open/problems/cheeseifyouplease
-    * https://codeforces.com/gym/101242 (Road Times) 
+    * https://vjudge.net/problem/Kattis-cheeseifyouplease
  */
+
+#include "../../contest/template.hpp"
  
 using T = db; // double probably suffices
 using vd = V<T>; using vvd = V<vd>;

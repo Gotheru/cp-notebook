@@ -174,7 +174,7 @@ Here is a list of verified codes as of now:
 - [x] **math**
 - [ ] **number-theory**
     - [ ] _Euclid_
-        - [ ] CRT.h
+        - [x] CRT.h
         - [ ] Euclid.h
         - [ ] FracInterval.h
         - [ ] ModArith.h
@@ -220,7 +220,7 @@ Here is a list of verified codes as of now:
         - [ ] IntegrateAdaptive.h
         - [ ] LinRec.h
         - [ ] LinearRecurrence.h
-        - [ ] Simplex.h
+        - [x] Simplex.h
     - [ ] _Polynomials_
         - [ ] ChirpZ.h
         - [ ] FFT.h

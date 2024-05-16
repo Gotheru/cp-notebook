@@ -1,11 +1,14 @@
+#pragma once
+
 /**
  * Description: Chinese Remainder Theorem. 
  	* $a.f\pmod{a.s},b.f\pmod{b.s}$ $\implies ? \pmod{\text{lcm}(a.s,b.s)}$. 
  	* Should work for $ab<2^{62}$.
  * Source: KACTL
- * Verification: Kattis generalchineseremainder
+ * Verification: https://vjudge.net/problem/Kattis-generalchineseremainder
  */
 
+#include "../../contest/template.hpp"
 #include "Euclid.h"
 
 pl CRT(pl a, pl b) { assert(0 <= a.f && a.f < a.s && 0 <= b.f && b.f < b.s);
