@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Used infrequently. Constructs minimal deterministic 
  	* finite automaton (DFA) that recognizes all suffixes of a string.
@@ -8,9 +10,13 @@
  	* Suffix links correspond to suffix tree of the reversed string!
  * Time: O(N\log \sum)
  * Source: *
- * Verification: *
+ * Verification:
+ 	* https://vjudge.net/problem/CSES-1753
+	* https://vjudge.net/problem/CSES-2105
  */
- 
+
+#include "../../contest/template.hpp"
+
 struct SuffixAutomaton {
 	int N = 1; vi lnk{-1}, len{0}, pos{-1}; // suffix link, 
 	// max length of state, last pos of first occurrence of state
@@ -64,17 +70,17 @@ struct SuffixAutomaton {
 		return ans; } 
 };
 
-SuffixAutomaton S;
-vi sa; str s;
-void dfs(int x) {
-	if (!S.isClone[x]) sa.pb(sz(s)-1-S.pos[x]);
-	V<pair<char,int>> chr;
-	each(t,S.iLnk[x]) chr.pb({s[S.pos[t]-S.len[x]],t});
-	sort(all(chr)); each(t,chr) dfs(t.s);
-}
+// // SuffixAutomaton S;
+// // vi sa; str s;
+// // void dfs(int x) {
+// // 	if (!S.isClone[x]) sa.pb(sz(s)-1-S.pos[x]);
+// // 	V<pair<char,int>> chr;
+// // 	each(t,S.iLnk[x]) chr.pb({s[S.pos[t]-S.len[x]],t});
+// // 	sort(all(chr)); each(t,chr) dfs(t.s);
+// // }
 
-int main() {
-	re(s); reverse(all(s));
-	S.init(s); S.genIlnk();
-	dfs(0); ps(sa); // generating suffix array for s
-}
+// // int main() {
+// // 	re(s); reverse(all(s));
+// // 	S.init(s); S.genIlnk();
+// // 	dfs(0); ps(sa); // generating suffix array for s
+// // }

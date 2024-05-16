@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Used infrequently. Ukkonen's algorithm for suffix tree. Longest
    * non-unique suffix of \texttt{s} has length \texttt{len[p]+lef} after each
@@ -5,8 +7,10 @@
    * decreases this quantity by one.
  * Time: O(N\log \sum)
  * Source: *
- * Verification: *
+ * Verification: https://vjudge.net/problem/UVA-10679
  */
+
+#include "../../contest/template.hpp"
 
 struct SuffixTree {
 	str s; int N = 0;

@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Used infrequently. Palindromic tree computes 
 	* number of occurrences of each palindrome within string.
@@ -9,10 +11,12 @@
 	* http://codeforces.com/blog/entry/13959
 	* https://codeforces.com/blog/entry/19193
  * Verification: 
-	* https://oj.uz/problem/view/APIO14_palindrome
-	* http://acm.timus.ru/problem.aspx?space=1&num=2058 (call vector reserve to pass ML)
-	* https://codeforces.com/gym/102141/attachments F
+	* https://vjudge.net/problem/SPOJ-APIO14_A
+	* http://acm.timus.ru/problem.aspx?space=1&num=2058 (call vector reserve to pass ML) @todo
+	* https://codeforces.com/gym/102141/attachments F @todo
  */
+
+#include "../../contest/template.hpp"
 
 struct PalTree {
 	static const int ASZ = 26;

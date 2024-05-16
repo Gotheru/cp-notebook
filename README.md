@@ -233,11 +233,11 @@ Here is a list of verified codes as of now:
         - [ ] PolyInvSimpler.h
         - [ ] PolyMultipoint.h
         - [ ] PolyRoots.h
-- [ ] **strings**
-    - [ ] _Heavy_
-        - [ ] PalTree.h
-        - [ ] SuffixAutomaton.h
-        - [ ] SuffixTree.h
+- [x] **strings**
+    - [x] _Heavy_
+        - [x] PalTree.h
+        - [x] SuffixAutomaton.h
+        - [x] SuffixTree.h
     - [x] _Light_
         - [x] AhoCorasickFixed.h
         - [x] AhoCorasickUnfixed.h
