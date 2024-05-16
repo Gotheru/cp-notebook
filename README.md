@@ -143,7 +143,7 @@ Here is a list of verified codes as of now:
         - [ ] TwoSAT.h
     - [ ] _DSU_
         - [x] DSU.h
-        - [ ] DSUrb.h
+        - [x] DSUrb.h
         - [ ] DynaCon.h
         - [ ] TwoEdgeCC.h
     - [ ] _Flows_

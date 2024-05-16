@@ -1,8 +1,12 @@
+#pragma once
+
 /**
  * Description: Disjoint Set Union with Rollback
  * Source: see DSU
- * Verification: *
+ * Verification: https://vjudge.net/problem/Yosupo-persistent_unionfind
  */
+
+#include "../../content/contest/template.hpp"
 
 struct DSUrb {
 	vi e; void init(int n) { e = vi(n,-1); }
