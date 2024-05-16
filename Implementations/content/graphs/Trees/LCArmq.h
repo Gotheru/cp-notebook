@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Euler Tour LCA. Compress takes a subset $S$ of nodes 
  	* and computes the minimal subtree that contains all the nodes 
@@ -6,11 +8,13 @@
 	* The root points to itself.
  * Time: O(N\log N) build, O(1) LCA, O(|S|\log |S|) compress
  * Source: USACO, Simon Lindholm (KACTL)
- * Verification: USACO Debug the Bugs
- 	* https://codeforces.com/contest/1320/problem/E
+ * Verification: USACO Debug the Bugs @todo
+ 	* https://codeforces.com/contest/1320/problem/E @todo
+	* https://open.kattis.com/problems/trafikverketsplan
  */
 
-#include "../../data-structures/Static Range Queries (9.1)/RMQ (9.1).h"
+#include "../../contest/template.hpp"
+#include "../../data-structures/static-range-queries/RMQ.h"
 
 struct LCA {
 	int N; V<vi> adj;

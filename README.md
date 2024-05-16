@@ -167,8 +167,8 @@ Here is a list of verified codes as of now:
     - [ ] _Trees_
         - [ ] Centroid.h
         - [ ] HLD.h
-        - [ ] LCAjump.h
-        - [ ] LCArmq.h
+        - [x] LCAjump.h
+        - [x] LCArmq.h
         - [ ] SmallToLarge.h
         - [ ] TreeDiameter.h
 - [x] **math**

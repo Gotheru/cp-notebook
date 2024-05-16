@@ -1,11 +1,15 @@
+#pragma once
+
 /**
- * Description: Calculates least common ancestor in tree with verts 
+ * Description: Calculates lowest common ancestor in tree with verts 
  	* $0\ldots N-1$ and root $R$ using binary jumping. 
  * Time: O(N\log N) build, O(\log N) query
  * Memory: O(N\log N)
  * Source: USACO Camp, KACTL
- * Verification: *
+ * Verification: https://open.kattis.com/problems/trafikverketsplan
  */
+
+#include "../../contest/template.hpp"
 
 struct LCA {
 	int N; V<vi> par, adj; vi depth;

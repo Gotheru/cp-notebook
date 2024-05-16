@@ -7,6 +7,7 @@
 	* https://codeforces.com/contest/1207/submission/59309672
  * Verification:
 	* https://vjudge.net/problem/CodeForces-1056E
+	* https://open.kattis.com/problems/proteinsyntes
  */
 
 #include "../../contest/template.hpp"
