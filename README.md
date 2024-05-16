@@ -44,7 +44,7 @@ Here is a list of verified codes as of now:
         - [ ] BITtree.h
         - [ ] SegSeg.h
     - [ ] _STL_
-        - [ ] Bset.h
+        - [x] Bset.h
         - [ ] CoordCompress.h
         - [ ] HashMap.h
         - [ ] HashMapSmall.h
