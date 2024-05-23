@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Multiply polynomials of ints for any modulus $<2^{31}$. 
  	* For XOR convolution ignore \texttt{m} within \texttt{fft}. 
@@ -9,12 +11,16 @@
  	* maroonrk
  	* https://github.com/atcoder/ac-library/blob/master/atcoder/convolution.hpp
  * Verification: 
-	* https://judge.yosupo.jp/problem/convolution_mod
-	* SPOJ polymul, CSA manhattan, CF Perfect Encoding
-	* http://codeforces.com/contest/632/problem/E
+	* https://vjudge.net/problem/Yosupo-convolution_mod
+	* https://judge.yosupo.jp/problem/convolution_mod_1000000007
+	* https://vjudge.net/problem/SPOJ-POLYMUL
+	* CSA manhattan, CF Perfect Encoding @todo
+	* https://vjudge.net/problem/CodeForces-632E
+	* https://vjudge.net/problem/Kattis-kinversions
  */
 
-#include "ModInt.h"
+#include "../../contest/template.hpp"
+#include "../../number-theory/Modular_Arithmetic/ModInt.h"
 
 // const int MOD = 998244353;
 tcT> void fft(V<T>& A, bool invert = 0) { // NTT

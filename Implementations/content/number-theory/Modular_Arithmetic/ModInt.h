@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: modular arithmetic operations 
  * Source: 
@@ -10,7 +12,7 @@
 	* https://open.kattis.com/problems/modulararithmetic
  */
 
-#pragma once
+#include "../../contest/template.hpp"
 
 template<int MOD, int RT> struct mint {
 	static const int mod = MOD;
@@ -25,9 +27,7 @@ template<int MOD, int RT> struct mint {
 		return !(a == b); }
 	friend bool operator<(const mint& a, const mint& b) { 
 		return a.v < b.v; }
-	friend void re(mint& a) { ll x; re(x); a = mint(x); }
-	friend str ts(mint a) { return ts(a.v); }
-   
+
 	mint& operator+=(const mint& o) { 
 		if ((v += o.v) >= MOD) v -= MOD; 
 		return *this; }
@@ -52,6 +52,10 @@ template<int MOD, int RT> struct mint {
 	friend mint operator*(mint a, const mint& b) { return a *= b; }
 	friend mint operator/(mint a, const mint& b) { return a /= b; }
 };
+
+template<int MOD, int RT> inline ostream& operator << (ostream& o, mint<MOD, RT> const& x) {
+	return o << x.v;
+}
 
 using mi = mint<MOD,5>; // 5 is primitive root for both common mods
 using vmi = V<mi>;

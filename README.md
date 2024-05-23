@@ -223,7 +223,7 @@ Here is a list of verified codes as of now:
         - [x] Simplex.h
     - [ ] _Polynomials_
         - [ ] ChirpZ.h
-        - [ ] FFT.h
+        - [x] FFT.h
         - [ ] Karatsuba.h
         - [ ] Poly.h
         - [ ] PolyConv.h
