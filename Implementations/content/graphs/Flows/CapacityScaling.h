@@ -1,9 +1,13 @@
+#pragma once
+
 /**
  * Description: Min Cost Circulation w/ Supplies and Demands via Capacity Scaling
  * Time: O(M^2 log U log M)
- * Source: Own
+ * Source: Benjamin Qi
  * Verification: https://judge.yosupo.jp/problem/min_cost_b_flow
  */
+
+#include "../../contest/template.hpp"
 
 using i128 = __int128_t;
 struct CapacityScaling {

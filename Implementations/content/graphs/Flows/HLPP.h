@@ -1,8 +1,12 @@
+#pragma once
+
 /**
  * Description: Quickly calculate max flow
  * Source: https://gist.github.com/Chillee/ad2110fc17af453fb6fc3357a78cfd28#file-hlpp-cpp
  * Verification: https://www.spoj.com/problems/FASTFLOW/
  */
+
+#include "../../contest/template.hpp"
 
 template <int SZ> struct HLPP {
 	typedef ll F; // flow type

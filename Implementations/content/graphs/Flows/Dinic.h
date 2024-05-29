@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Fast flow. After computing flow, edges $\{u,v\}$ such that 
 	* $lev[u] \neq -1,$ $lev[v] = -1$ are part of min cut.
@@ -7,6 +9,8 @@
  * Verification: RMI 2017 Day 1 Fashion
 	* https://pastebin.com/VJxTvEg1
  */
+
+#include "../../contest/template.hpp"
 
 struct Dinic {
 	using F = ll; // flow type

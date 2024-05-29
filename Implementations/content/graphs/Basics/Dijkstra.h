@@ -1,8 +1,14 @@
+#pragma once
+
 /**
  * Description: shortest path
- * Source: own
- * Verification: https://open.kattis.com/problems/shortestpath1
+ * Source: Benq
+ * Verification:
+ 	* https://vjudge.net/problem/Kattis-shortestpath1
+ 	* https://vjudge.net/problem/Kattis-aqueducts 
  */
+
+#include "../../contest/template.hpp"
 
 template<class C, bool directed> struct Dijkstra {
 	int SZ; V<C> dist; 

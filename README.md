@@ -126,7 +126,7 @@ Here is a list of verified codes as of now:
         - [ ] TreeDecomp2.h
     - [ ] _Basics_
         - [ ] BellmanFord.h
-        - [ ] Dijkstra.h
+        - [x] Dijkstra.h
         - [ ] DirectedCycle.h
         - [ ] FloydWarshall.h
         - [ ] GridBFS.h
@@ -160,7 +160,7 @@ Here is a list of verified codes as of now:
         - [ ] GeneralMatchBlossom.h
         - [ ] GeneralMatchBlossom_Alt.h
         - [ ] GeneralMatchBlossom_Old.h
-        - [ ] Hungarian.h
+        - [x] Hungarian.h
         - [ ] MaxMatchFast.h
         - [ ] MaxMatchHeuristic.h
         - [ ] MaxMatchLexMin.h

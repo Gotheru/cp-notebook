@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Given J jobs and W workers (J <= W), computes the minimum cost
  * to assign each prefix of jobs to distinct workers.
@@ -14,12 +16,15 @@
 	 * http://e-maxx.ru/algo/assignment_hungary#6
 	 * https://en.wikipedia.org/wiki/Hungarian_algorithm
  * Verification:
-	 * https://www.spoj.com/problems/BABY/
-	 * https://open.kattis.com/problems/cordonbleu
-	 * more problems at https://codeforces.com/blog/entry/63701
+	 * https://vjudge.net/problem/SPOJ-BABY
+	 * https://vjudge.net/problem/Kattis-cordonbleu
+	 * https://vjudge.net/problem/Kattis-aqueducts
  */
+
+#include "../../contest/template.hpp"
+
 template <class T> vector<T> hungarian(const vector<vector<T>> &C) {
-	const int J = (int)size(C), W = (int)size(C[0]);
+	const int J = sz(C), W = sz(C[0]);
 	assert(J <= W);
 	/// job[w] = job assigned to w-th worker, or -1 if no job assigned
 	/// note: a W-th worker was added for convenience

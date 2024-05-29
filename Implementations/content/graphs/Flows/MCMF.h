@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Minimum-cost maximum flow, assumes no negative cycles. 
  	* It is possible to choose negative edge costs such that the first 
@@ -12,10 +14,15 @@
  	* https://en.wikipedia.org/wiki/Johnson%27s_algorithm (to get non-negative weights)
  	* https://codeforces.com/contest/1316/submission/72472865 
  		* mango_lassi, min cost circulation w/ capacity scaling
- * Verification: https://codeforces.com/contest/164/problem/C
- 	* https://codeforces.com/contest/316/problem/C2
- 		* TLEs, don't use priority queue
+ * Verification:
+ 	* https://codeforces.com/contest/164/problem/C @todo
+ 	* https://codeforces.com/contest/316/problem/C2 @todo
+	* TLEs, don't use priority queue @todo
+	* https://vjudge.net/problem/Kattis-ragingriver
+	* https://vjudge.net/problem/Kattis-mincostmaxflow
  */
+
+#include "../../contest/template.hpp"
 
 struct MCMF { 
 	using F = ll; using C = ll; // flow type, cost type
