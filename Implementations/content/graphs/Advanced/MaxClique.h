@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Quickly finds a maximum clique of a graph (given as symmetric bitset
 	* matrix; self-edges not allowed). To find maximum independent set consider complement.
@@ -6,7 +8,11 @@
  	* https://en.wikipedia.org/wiki/MaxCliqueDyn_maximum_clique_algorithm
  * Time: Runs in about 1s for $n=155$ and worst case random graphs ($p=.90$). 
 	* Faster for sparse graphs.
+ * Verification:
+	* https://vjudge.net/problem/Kattis-maxclique
  */
+
+#include "../../contest/template.hpp"
 
 struct MaxClique {
 	db limit = 0.025, pk = 0; // # of steps
