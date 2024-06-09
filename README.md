@@ -62,7 +62,7 @@ Here is a list of verified codes as of now:
         - [ ] RangeQuery.h
     - [ ] DynaCon.h
     - [ ] EulerTourTree.h
-    - [ ] LeftistHeap.h
+    - [x] LeftistHeap.h
     - [ ] Treap.h
 - [ ] **geometry**
     - [ ] _3D_
@@ -136,7 +136,7 @@ Here is a list of verified codes as of now:
     - [ ] _DFS_
         - [ ] BCC.h
         - [ ] BipolarOrientation.h
-        - [ ] EulerPath.h
+        - [x] EulerPath.h
         - [ ] MaximalCliques.h
         - [ ] SCCK.h
         - [ ] SCCT.h

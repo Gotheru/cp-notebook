@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Eulerian path starting at \texttt{src} if it exists, 
 	 * visits all edges exactly once. Works for both directed and 
@@ -6,9 +8,11 @@
  * Time: O(N+M)
  * Source: USACO Training, MIT ICPC Notebook
  * Verification:
-	* directed -> https://open.kattis.com/problems/eulerianpath
-	* undirected -> USACO Training 3.3, Riding the Fences
+	* directed -> https://vjudge.net/problem/Kattis-eulerianpath
+	* undirected -> https://vjudge.net/problem/洛谷-P2731
  */
+
+#include "../../contest/template.hpp"
 
 template<bool directed> struct Euler {
 	int N; V<vpi> adj; V<vpi::iterator> its; vb used;
