@@ -116,10 +116,10 @@ Here is a list of verified codes as of now:
         - [ ] DominatorTree.h
         - [ ] EdgeColor.h
         - [ ] EdgeColorBip.h
-        - [ ] KthWalk.h
+        - [x] KthWalk.h
         - [ ] LCT.h
         - [ ] LoopyNim.h
-        - [ ] MaxClique.h
+        - [x] MaxClique.h
         - [ ] StableRoommates.h
         - [ ] ThreeEdgeCC.h
         - [ ] TopTree.h
