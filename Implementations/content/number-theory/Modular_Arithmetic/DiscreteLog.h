@@ -1,10 +1,13 @@
+#pragma once
+
 /**
- * Description: find least integer p such that r^p=x(mod MOD)
-	* meet in the middle: O(sqrt(mod)) per query
+ * Description: find least integer $p$ such that $r^p \equiv x \mod MOD$
+ * Time: O(\sqrt{mod}) per query
  * Source: Own
  * Verification: https://www.hackerrank.com/contests/infinitum11/challenges/discrete-logarithm/problem
  */
 
+#include "../../contest/template.hpp"
 #include "ModInt.h"
 
 struct DiscreteLog {

@@ -1,5 +1,7 @@
+#pragma once
+
 /**
- * Description: Calculates smallest P such that x^P equiv 1 (mod p)
+ * Description: Calculates smallest $P$ such that $x^P \equiv 1 \mod p$
  * Source: Own
  * Verification: https://atcoder.jp/contests/jag2015summer-day4/tasks/icpc2015summer_day4_d
  */

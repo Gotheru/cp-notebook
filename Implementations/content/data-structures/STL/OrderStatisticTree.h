@@ -14,13 +14,6 @@ tcT> using Tree = tree<T, null_type, less<T>,
 #define ook order_of_key
 #define fbo find_by_order
 
-void treeExample() {
-	Tree<int> t, t2; t.insert(8);
-	auto it = t.insert(10).f; assert(it == t.lb(9));
-	assert(t.ook(10) == 1 && t.ook(11) == 2 && *t.fbo(0) == 8);
-	t.join(t2); // assuming T < T2 or T > T2, merge t2 into t
-}
-
 /**
 int atMost(Tree<pi>& T, int r) { 
 	return T.ook({r,MOD}); }

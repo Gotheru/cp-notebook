@@ -1,3 +1,14 @@
-alias clr="printf '\33c'"
-co() { g++ -std=c++17 -O2 -Wall -Wextra -Wshadow -Wconversion -o $1 $1.cpp; }
-run() { co $1 && ./$1; }
+alias res='reset'
+alias r='reset'
+comp () {
+	F="${1%.*}"
+	g++ -g "${F}.cpp" -o "${F}" -Wall -Wextra -Wshadow -Wconversion "${@:2}"
+}
+run () {
+	F="${1%.*}"
+	comp "${F}" "${@:2}" && ./"${F}"
+}
+all () {
+	F="${1%.*}"
+	comp "${F}" "${@:2}" && ./"${F}" < "${F}.in"
+}

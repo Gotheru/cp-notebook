@@ -24,8 +24,7 @@ Here is a list of verified codes as of now:
         - [ ] BITrange.h
         - [ ] BitNd.h
         - [ ] ConsecutivePairs.h
-        - [ ] LazySegAlt.h
-        - [ ] LazySegmentTree.h
+        - [x] LazySegTree.h
         - [ ] LichaoSeg.h
         - [ ] MaxQuery.h
         - [ ] Mo.h

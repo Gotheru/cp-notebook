@@ -102,6 +102,7 @@
 			\item permutations of $[n]$ with no 3-term increasing subseq.
 		\end{itemize}
 
+\begin{comment}
 \section{Young Tableaux}
 
 Let a \textbf{Young diagram} have shape $\lambda=(\lambda_1\geq \cdots\geq \lambda_k),$ where $\lambda_i$ equals the number of cells in the $i$-th (left-justified) row from the top. A \textbf{Young tableau} of shape $\lambda$ is a filling of the $n=\sum \lambda_i$ cells with a permutation of $1\ldots n$ such that each row and  column is increasing.
@@ -115,6 +116,7 @@ $f^\lambda \ =\ \frac{n!}{\prod h_\lambda (i,j)}.$
 \item Add $x$ to the first row of $S$ by inserting $x$ in place of the largest $y$ with $x<y$. If $y$ doesn't exist, push $x$ to the end of the row, set the value of $T$ at that position to be $i$, and stop.
 \item Add $y$ to the second row using the same rule, keep repeating as necessary.
 \end{enumerate}
+\end{comment}
 
 \begin{comment}
 For $\sigma=(5,2,3,1,4),$
@@ -154,10 +156,10 @@ $$T(\sigma): \begin{array}{c}
 \end{array}$$
 \end{comment}
 
-All pairs $(S(\sigma),T(\sigma))$ of the same shape correspond to a unique $\sigma$, so
-$n!=\sum (f^{\lambda})^2.$ Also, $S(\sigma^R)=S(\sigma)^T.$
+% All pairs $(S(\sigma),T(\sigma))$ of the same shape correspond to a unique $\sigma$, so
+% $n!=\sum (f^{\lambda})^2.$ Also, $S(\sigma^R)=S(\sigma)^T.$
 
-Let $d_k(\sigma),a_k(\sigma)$ be the lengths of the longest subseqs which are a union of $k$ decreasing/ascending subseqs, respectively. Then $a_k(\sigma)=\sum_{i=1}^k\lambda_i, d_k(\sigma)=\sum_{i=1}^k\lambda^*_i,$ where $\lambda^*_i$ is size of the $i$-th column. 
+% Let $d_k(\sigma),a_k(\sigma)$ be the lengths of the longest subseqs which are a union of $k$ decreasing/ascending subseqs, respectively. Then $a_k(\sigma)=\sum_{i=1}^k\lambda_i, d_k(\sigma)=\sum_{i=1}^k\lambda^*_i,$ where $\lambda^*_i$ is size of the $i$-th column. 
 
 % 300iq Disjoint LIS
 % msg camp 2014 "sequence shape"

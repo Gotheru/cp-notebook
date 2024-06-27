@@ -1,12 +1,12 @@
 /**
  * Description: Heavy-Light Decomposition, add val to verts 
- 	* and query sum in path/subtree.
+ 	* and query sum in path/subtree. @todo change so that it works for new LazySegTree!!!!
  * Time: any tree path is split into $O(\log N)$ parts
  * Source: http://codeforces.com/blog/entry/22072, https://codeforces.com/blog/entry/53170
  * Verification: *
  */
 
-#include "../../data-structures/1D Range Queries (9.2)/LazySeg (15.2).h"
+#include "../../data-structures/1D-range-queries/LazySegTree.h"
 
 template<int SZ, bool VALS_IN_EDGES> struct HLD { 
 	int N; vi adj[SZ];
@@ -46,7 +46,7 @@ template<int SZ, bool VALS_IN_EDGES> struct HLD {
 			if (depth[root[x]] > depth[root[y]]) swap(x,y);
 			op(pos[root[y]],pos[y]); }
 		if (depth[x] > depth[y]) swap(x,y);
-		op(pos[x]+VALS_IN_EDGES,pos[y]); 
+		op(pos[x]+VALS_IN_EDGES,pos[y]);
 	}
 	void modifyPath(int x, int y, int v) { 
 		processPath(x,y,[this,&v](int l, int r) { 

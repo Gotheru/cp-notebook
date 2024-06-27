@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Description: Biconnected components of edges. Removing any vertex in BCC
  	* doesn't disconnect it. To get block-cut tree, create a bipartite graph
@@ -11,6 +13,8 @@
  	* USACO December 2017, Push a Box -> https://pastebin.com/yUWuzTH8
  	* https://cses.fi/problemset/task/1705/
  */
+
+#include "../../contest/template.hpp"
 
 struct BCC {
 	V<vpi> adj; vpi ed; 

@@ -8,7 +8,7 @@
  * Verification: https://open.kattis.com/problems/gridmst
  */
 
-#include "DSU (7.6).h"
+#include "DSU.h"
 
 // use standard MST algorithm on result to find final MST
 V<pair<int,pi>> manhattanMst(vpi v) {
