@@ -9,8 +9,11 @@ When doing DP on intervals: $a[i][j] = \min_{i < k < j}(a[i][k] + a[k][j]) + f(i
 \item Consider also: LineContainer (ch. Data structures), monotone queues, ternary search.
 \end{itemize}
 
-	\kactlimport{CircularLCS.h}
-	\kactlimport{SMAWK.h}
+\section{Misc}
+	\kactlimport{Misc/CircularLCS.h}
+	\kactlimport{Misc/SMAWK.h}
+	\kactlimport{Misc/TernarySearch.h}
+	\kactlimport{Misc/Calendar.h}
 
 \section{Debugging tricks}
 	\begin{itemize}
@@ -35,14 +38,14 @@ When doing DP on intervals: $a[i][j] = \min_{i < k < j}(a[i][k] + a[k][j]) + f(i
 			\item \lstinline{#pragma GCC target ("avx,avx2")} can double performance of vectorized code, but causes crashes on old machines. Also consider older \lstinline{#pragma GCC target ("sse4")}.
 			\item \lstinline{#pragma GCC optimize ("trapv")} kills the program on integer overflows (but is really slow).
 		\end{itemize}
-
+	
 	% \kactlimport{BumpAllocator.h}
 	% \kactlimport{SmallPtr.h}
 	% \kactlimport{BumpAllocatorSTL.h}
 	% \kactlimport{FastIO.h}
 
-\section{Other languages}
+% \section{Other languages}
 	% \kactlimport{Main.java}
-	\kactlimport{Python3.py}
-	\kactlimport{Decimal.py}
+	% \kactlimport{Python3.py}
+	% \kactlimport{Decimal.py}
 	% \kactlimport{Kotlin.kt}
