@@ -7,7 +7,8 @@
  	* http://www.usaco.org/index.php?page=viewproblem2&cpid=601 (4238 ms, 2907 ms w/ BumpAllocator)
  */
 
-#include "../1D Range Queries (9.2)/SparseSeg (9.2).h"
+#include "../../contest/template.hpp"
+#include "../1D-range-queries/SparseSeg.h"
 
 template<class T> struct Node {
 	node<T> seg; Node* c[2];

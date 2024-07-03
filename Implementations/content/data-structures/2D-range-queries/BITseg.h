@@ -7,9 +7,10 @@
  	* http://www.usaco.org/index.php?page=viewproblem2&cpid=722 (13/15, 15/15 and 1857ms with BumpAllocator)
  */
 
-#include "../1D Range Queries (9.2)/SparseSeg (9.2).h"
+#include "../../contest/template.hpp"
+#include "../1D-range-queries/SparseSeg.h"
 
-template<class T> struct BITseg {
+tcT> struct BITseg {
 	node<T> seg[SZ];
 	BITseg() { F0R(i,SZ) seg[i] = node<T>(); }
 	void upd(int x, int y, int v) { // add v

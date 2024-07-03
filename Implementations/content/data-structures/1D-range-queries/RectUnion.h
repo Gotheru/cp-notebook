@@ -1,10 +1,12 @@
+#pragma once
 /**
  * Description: Area of rectangle union using segment tree that 
-	* keeps track of min and # of mins. Rectangles are in form {{x1,x2},{y1,y2}}.
+	* keeps track of min and number of mins. Rectangles are in form $(x_1, x_2), (y_1, y_2)$.
  * Source: Own
  * Verification: FHC19 Final D
 	* https://cses.fi/problemset/task/1741/
  */
+#include "../../contest/template.hpp"
 
 typedef pi T;
 T operator+(const T& l, const T& r) {

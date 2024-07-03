@@ -13,7 +13,7 @@
 #include "../../contest/template.hpp"
 
 tcT> struct RMQ { // floor(log_2(x))
-	int level(int x) { return 31-__builtin_clz(x); }
+	static constexpr int level(int x) { return 31-__builtin_clz(x); }
 	V<T> v; V<vi> jmp;
 	int cmb(int a, int b) {
 		return v[a]==v[b]?min(a,b):(v[a]<v[b]?a:b); }

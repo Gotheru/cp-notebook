@@ -1,3 +1,5 @@
+#pragma once
+
 /**
  * Author: Lukas Polacek
  * Date: 2009-10-30
@@ -8,7 +10,8 @@
  * Time: Both operations are $O(\log N)$.
  * Status: Stress-tested
  */
-#pragma once
+
+#include "../../contest/template.hpp"
 
 tcT> struct BIT {
 	int N; V<T> data;

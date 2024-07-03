@@ -1,15 +1,25 @@
 \chapter{Various}
 
 \section{Dynamic programming}
-
-When doing DP on intervals: $a[i][j] = \min_{i < k < j}(a[i][k] + a[k][j]) + f(i, j)$, where the (minimal) optimal $k$ increases with both $i$ and $j$,
-\begin{itemize}
-\item one can solve intervals in increasing order of length, and search $k = p[i][j]$ for $a[i][j]$ only between $p[i][j-1]$ and $p[i+1][j]$.
-\item This is known as Knuth DP. Sufficient criteria for this are if $f(b,c) \le f(a,d)$ and $f(a,c) + f(b,d) \le f(a,d) + f(b,c)$ for all $a \le b \le c \le d$.
-\item Consider also: LineContainer (ch. Data structures), monotone queues, ternary search.
-\end{itemize}
-
+	\subsection{Knuth DP}
+		When doing DP on intervals: $a[i][j] = \min_{i < k < j}(a[i][k] + a[k][j]) + f(i, j)$, where the (minimal) optimal $k$ increases with both $i$ and $j$,
+		\begin{itemize}
+		\item one can solve intervals in increasing order of length, and search $k = p[i][j]$ for $a[i][j]$ only between $p[i][j-1]$ and $p[i+1][j]$.
+		\item This is known as Knuth DP. Sufficient criteria for this are if $f(b,c) \le f(a,d)$ and $f(a,c) + f(b,d) \le f(a,d) + f(b,c)$ for all $a \le b \le c \le d$.
+		\item Consider also: Monotone queues, ternary search.
+		\end{itemize}
+	\subsection{Divide and Conquer DP}
+		If the recurrence of the dynamic programming is of the form
+		$$dp(i,j) = \min_{0 \le k \le j}{dp(i-1,k-1)+C(k,j)}$$
+		where $C(k,j)$ is a cost function and $dp(i,j) = 0$ for $j < 0$ and $opt(i,j) \le opt(i,j+1)$ for all $i,j$, then we can apply Divide and Conquer DP.
+		\kactlimport{DP/DnC.h}
+	\subsection{Line Container DP}
+		If the recurrence of the dynamic programming is of the form
+		$$dp(i) = \max_{j<i}{g(i) \cdot h(j) + dp(j)}$$
+		We can define $y = dp(i), x = g(i), m_j = h(j), c_j = d(j)$ and the problem reduces to finding the minimum $y$ that we can obtain with all the lines $y = m_j \cdot x + c_j$.
+		We can solve that problem using a Li Chao Tree (see Line Container in Data Structures).
 \section{Misc}
+	\kactlimport{Misc/LIS.h}
 	\kactlimport{Misc/CircularLCS.h}
 	\kactlimport{Misc/SMAWK.h}
 	\kactlimport{Misc/TernarySearch.h}
