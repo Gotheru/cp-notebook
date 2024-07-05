@@ -14,6 +14,4 @@ template<int SZ> struct TrieAlpha {
 			int t = x[i]-'a';
 			if (!nex[cur][t]) nex[cur][t] = ++num;
 			sz[cur = nex[cur][t]] += a;
-		}
-	}
-};
+		}}};

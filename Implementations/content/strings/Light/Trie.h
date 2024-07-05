@@ -19,8 +19,7 @@ template<int SZ, int MXBIT> struct Trie {
 			int t = (x>>i)&1;
 			if (!nex[cur][t]) nex[cur][t] = ++num;
 			sz[cur = nex[cur][t]] += a;
-		}
-	}
+		}}
 	ll max_xor(ll x) { // compute max xor
 		if (!sz[0]) return -INF; // no elements in trie
 		int cur = 0;
@@ -29,8 +28,7 @@ template<int SZ, int MXBIT> struct Trie {
 			if (!nex[cur][t] || !sz[nex[cur][t]]) t ^= 1;
 			cur = nex[cur][t]; if (t) x ^= 1LL<<i;
 		}
-		return x;
-	}
+		return x; }
 	ll min_xor(ll x) { // compute min_xor
 		if (!sz[0]) return INF; // no elements in trie
 		int cur = 0, res = 0;
@@ -39,6 +37,5 @@ template<int SZ, int MXBIT> struct Trie {
 			if (nex[cur][t] && sz[nex[cur][t]]) cur = nex[cur][t];
 			else res |= 1 << i, cur = nex[cur][!t];
 		}
-		return res;
-	}
+		return res; }
 };
